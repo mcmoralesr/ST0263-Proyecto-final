@@ -4,6 +4,8 @@ Este es el proyecto final para la asignatura ST0263, que implementa una aplicaci
 
 # Link de Drive entrega final documento: https://docs.google.com/document/d/1UI6b-tYXnW_oKm8TZdca6pYXUS3o06YSUXUkxChFThI/edit?usp=sharing
 
+# Link de Video entrega final documento: https://drive.google.com/file/d/1mXCoWvjBgfbu7LlpSj6qg9WOBQUSc0j6/view?usp=sharing
+
 ## 🚀 Características
 
 - **Backend:** Node.js con Express y MongoDB como base de datos.
