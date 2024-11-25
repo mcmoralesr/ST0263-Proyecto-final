@@ -1,8 +1,10 @@
 // src/App.js
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importa las rutas
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'; // Asegúrate de que Navbar.js esté en src/components
 import AddBook from './pages/AddBook'; // Asegúrate de que AddBook.js esté en src/pages
+import BookDetail from './pages/BookDetail'; // Asegúrate de que BookDetail.js esté en src/pages
+import AboutPage from './pages/AboutPage'; // Asegúrate de que AboutPage.js esté en src/pages
 import './App.css';
 
 const App = () => {
@@ -65,6 +67,8 @@ const App = () => {
               }
             />
             <Route path="/add" element={<AddBook />} />
+            <Route path="/book/:id" element={<BookDetail />} />
+            <Route path="/about" element={<AboutPage />} />
           </Routes>
         </div>
       </div>
