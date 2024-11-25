@@ -2,6 +2,8 @@
 
 Este es el proyecto final para la asignatura ST0263, que implementa una aplicación completa de una tienda de libros en línea (Bookstore) utilizando **React (Frontend)**, **Node.js (Backend)**, y **MongoDB (Base de Datos)**. El proyecto sigue una arquitectura escalable y está preparado para despliegues en Docker y Kubernetes.
 
+# Link de Drive entrega final documento: https://docs.google.com/document/d/1UI6b-tYXnW_oKm8TZdca6pYXUS3o06YSUXUkxChFThI/edit?usp=sharing
+
 ## 🚀 Características
 
 - **Backend:** Node.js con Express y MongoDB como base de datos.
