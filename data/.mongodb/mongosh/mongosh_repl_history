@@ -1,5 +1,15 @@
 db.books.find().pretty()
 use bookstore
+.exit
+docker exec -it backend node seed.js
+db.books.find().pretty();
+use bookstore;
+db.books.find().pretty()
+use bookstore
+db.books.find({ _id: ObjectId("67442399ca2c7794020c6397") }).pretty()
+use bookstore
+db.books.find().pretty()
+use bookstore
 ©
 db.books.find().pretty()
 use bookstore

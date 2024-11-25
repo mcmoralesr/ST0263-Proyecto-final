@@ -1,13 +1,13 @@
-# Construir la aplicación React
+# Frontend Dockerfile
 FROM node:16 as build
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
 COPY . .
+RUN npm install
 RUN npm run build
 
-# Usar Nginx para servir la aplicación
-FROM nginx:alpine
+# Serve with Nginx
+FROM nginx:1.27.2
 COPY --from=build /app/build /usr/share/nginx/html
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
