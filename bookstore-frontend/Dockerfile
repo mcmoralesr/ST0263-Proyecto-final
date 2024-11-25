@@ -1,3 +1,4 @@
+# Construir la aplicación React
 FROM node:16 as build
 WORKDIR /app
 COPY package*.json ./
@@ -5,6 +6,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
+# Usar Nginx para servir la aplicación
 FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 EXPOSE 80

@@ -1,0 +1,6 @@
+db.books.find().pretty()
+use bookstore
+©
+db.books.find().pretty()
+use bookstore
+show dbs
