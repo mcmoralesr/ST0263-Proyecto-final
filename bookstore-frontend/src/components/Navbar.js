@@ -1,11 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+// src/components/Navbar.js
+import React from 'react';
+import { Link } from 'react-router-dom'; // Asegúrate de importar desde react-router-dom
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        <Link to="/" className="navbar-brand">
           Bookstore
         </Link>
         <button
@@ -22,12 +23,12 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link to="/" className="nav-link">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/add">
+              <Link to="/add" className="nav-link">
                 Add Book
               </Link>
             </li>

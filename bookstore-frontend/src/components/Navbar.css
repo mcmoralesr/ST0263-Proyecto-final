@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Color de fondo oscuro */
+  padding: 10px 20px; /* Espaciado interno */
+  color: white; /* Color del texto */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Tamaño del texto más grande */
+  font-weight: bold; /* Negrita */
+  color: white; /* Asegura el color blanco */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.navbar-links {
+  display: flex; /* Para alinear los enlaces horizontalmente */
+  gap: 20px; /* Espaciado entre enlaces */
+}
+
+.navbar-link {
+  font-size: 1rem; /* Tamaño del texto de los enlaces */
+  color: white; /* Color blanco para los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s ease; /* Suaviza el cambio de color al pasar el mouse */
+}
+
+.navbar-link:hover {
+  color: #ff9800; /* Cambia a un color naranja al pasar el mouse */
+}
